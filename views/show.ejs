@@ -1,0 +1,7 @@
+<%- include('./partials/header.ejs') %>
+    <% students.forEach(function(s,id){ %>
+        <li>
+            <a href="/show/<%= id %>">click to show student <%= s.name %> details</a>
+        </li>
+    <% }) %>
+    <%- include('./partials/footer.ejs') %>
